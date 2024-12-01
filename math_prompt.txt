@@ -1,0 +1,129 @@
+You are a highly intelligent problem solver. Mistakes have severe consequences, so you must think STEP BY STEP with absolute precision. 
+If you find an error during Step 4 (Verification), you must restart from Step 1, reanalyze the problem thoroughly, and avoid skipping any steps. 
+You should replace your answer with {{answer}}, the answer should always be a number, the answer should be precise, don’t omit any digit,
+ don’t include any other character, and it shouldn’t be none. The questions always have an answer.
+ALSO IN STEP 5, ONLY RETREIVE ANSWER FROM STEP3, OMIT VALIDATION PROCESS IN STEP 4
+Follow these steps for every problem:
+---
+
+Problem:
+{{question}}
+
+#### Step 1: Understand the Problem
+- Restate the problem clearly in your own words, describing the key relationships between the elements in the problem.
+- Identify all given information, constraints, and what needs to be calculated.
+- Ensure clarity and completeness in understanding before proceeding.
+
+#### Step 2: Problem Type
+- Categorize the problem (e.g., algebra, geometry, arithmetic).
+- State the relevant principles, formulas, or logical methods required.
+
+#### Step 3: Step-by-Step Solution
+- Solve the problem systematically:
+  1. Use the provided data and relationships to write the equations or expressions.
+  2. Calculate the solution step by step, showing all intermediate steps.
+  3. Clearly state any assumptions made. 
+  4. The answer is {{answer}}
+
+#### Step 4: Verification (Critical Step with Restart Option)
+- Recalculate critical steps to ensure accuracy.
+- If an error is detected:
+  1. Clearly explain the error.
+  2. Restart from Step 1 to reassess and recalculate without skipping steps.
+  3. Show all calculations and ensure correctness before proceeding.
+
+#### Step 5: Final Answer
+State the final answer clearly and concisely, including any necessary units.
+Briefly summarize the verification process to confirm accuracy.
+Double-check that the answer directly addresses the problem.
+
+
+We get answer from step3, The answer is {{answer}}
+
+Below are two examples you can follow
+
+Example1
+A small town has streetlamps installed along five streets that form a connected main road. The three middle streets each have 20 streetlamps. The first street has 1.5 times as many streetlamps as one middle street, while the last street has half as many streetlamps as one middle street. How many streetlamps are there in total?
+
+
+
+Step1 understand the problem:
+Known condition:
+  - Each of the three middle streets has 20 streetlamps.
+  - The first street has1.5 times  as many as one middle street
+  - The last street has 0.5 times as many as one middle street
+
+Task: get Total streetlamps will be the sum of all these contributions.
+
+Step2: problem type
+Type: Arithmetic problem involving multiplication and addition.
+Method: Use multiplication to calculate the number of lamps on the first and last streets, then sum all contributions.
+
+
+Step 3
+1.Calculate the number of streetlamps on the first street: 1.5×20=301.5 \times 20 = 301.5×20=30
+2.Calculate the number of streetlamps on the last street: 0.5×20=100.5 \times 20 = 100.5×20=10
+3. Calculate the total for the three middle streets: 3×20=603 \times 20 = 603×20=60
+4. Add all contributions: 30+60+10=10030 + 60 + 10 = 10030+60+10=100
+5. The answer is 100
+
+Step 4: Verification (Assume the Final Answer is Correct, we need to get the pre condition)
+Assuming we already known there’s total 100 streetlamps
+Known condition:
+  - The first street has1.5 times  as many as one middle street
+  - The last street has 0.5 times as many as one middle street
+ - total number of lamp is 100
+Task:
+    Calculate the number of middle street
+
+We assume that middle street has x lamp
+
+The problem is equation solving problem
+
+First street has 1.5*x lamp, and the last street has 0.5*x lamp
+Total lamp is 3*x + 1.5*x + 0.5*x = 5*x 
+5*x = 100
+X = 20
+The answer is correct !
+
+Please noticing that, if here, the verification step is wrong, like if you get x = 25 or something, you should return to step 1, until you get the correct answer
+
+Step 5
+We get answer from step3, The answer is 100
+
+
+Problem:
+A rectangle has a perimeter of 36. If the length is twice the width, find the length of the rectangle.
+
+Step 1: Understand the Problem
+The perimeter of the rectangle is 36.
+The relationship between the length (L) and the width (W) is L=2W
+The task is to find the length (L).
+
+Step 2: Identify Problem Type
+Type: Algebraic problem involving a linear equation.
+Method: Use the perimeter formula and the relationship between length and width.
+
+Step 3: Step-by-Step Solution
+Write the formula for the perimeter of a rectangle: P=2L+2W 
+Substitute p = 36, 36=2L+2W
+Substitute L=2WL = 2WL=2W into the equation: 36=2*(2W)+2W 
+Simplify: 36=4W+2W
+36 = 6W
+W = 36/6 =6
+Solve for : W=36÷6=6W = 36 \div 6 = 6W=36÷6=6
+FindL USING L = 2*w , L = 12
+The answer is 12
+
+Step 4: Verification
+Assume L=12, w + 6
+P = 2L+2W= 2* 12 + 2 * 6 = 36
+The calculated perimeter matches the given value
+Check the relationship between LLL and WWW:
+L=2W  ⟹  12= 2 *6, which is true
+No discrepancies are found.
+
+Step 5: Final Answer
+We get answer from step 3
+The answer is 12
+
